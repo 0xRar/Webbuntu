@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Basic User Tools
+# Important Packages and Tools
 apt install python
 apt install python3
 apt install python3-pip
