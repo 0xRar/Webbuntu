@@ -11,6 +11,8 @@ apt install firefox
 apt install smbclient
 apt install neofetch
 apt install git
+apt install curl
+apt install mlocate
 snap install codium --classic
 
 
@@ -26,8 +28,11 @@ apt install dirb
 apt install sqlmap
 apt install nikto
 apt install wireshark
-apt install searchsploit
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+apt install hydra
+apt install john -y
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
 
 sublist3r () {
 	git clone https://github.com/aboul3la/Sublist3r.git /opt/Sublist3r
@@ -37,6 +42,14 @@ sublist3r () {
 	python3 setup.py install
 }
 sublist3r
+
+httprobe () {
+	git clone https://github.com/tomnomnom/httprobe.git /opt/httprobe
+	cd /opt/httprobe
+
+	go build main.go
+}
+httprobe
 
 
 # Communication
