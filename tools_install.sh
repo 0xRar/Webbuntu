@@ -9,9 +9,9 @@ apt install chromium-browser
 apt install firefox
 apt install smbclient
 apt install neofetch
-snap install btop
-snap install sublime-text
 apt install git
+apt install codium
+snap install btop
 
 
 # Terminal Tools
