@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # Basic User Tools
+apt install python
+apt install python3
+apt install perl
+apt install golang
 apt install chromium-browser
 apt install firefox
 apt install smbclient
