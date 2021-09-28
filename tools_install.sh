@@ -3,6 +3,7 @@
 # Basic User Tools
 apt install python
 apt install python3
+apt install python3-pip
 apt install perl
 apt install golang
 apt install chromium-browser
@@ -10,8 +11,7 @@ apt install firefox
 apt install smbclient
 apt install neofetch
 apt install git
-apt install codium
-snap install btop
+snap install codium --classic
 
 
 # Terminal Tools
@@ -41,3 +41,5 @@ sublist3r
 
 # Communication
 snap install discord
+
+apt update && apt upgrade
