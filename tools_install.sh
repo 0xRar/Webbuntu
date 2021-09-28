@@ -43,14 +43,6 @@ sublist3r () {
 }
 sublist3r
 
-httprobe () {
-	git clone https://github.com/tomnomnom/httprobe.git /opt/httprobe
-	cd /opt/httprobe
-
-	go build main.go
-}
-httprobe
-
 
 # Communication
 snap install discord
